@@ -4,7 +4,7 @@
 #include <fstream>
 #include <regex>
 #include <string>
-
+#include <unordered_map>
 namespace LinuxParser {
 // Paths
 const std::string kProcDirectory{"/proc/"};
@@ -19,6 +19,7 @@ const std::string kOSPath{"/etc/os-release"};
 const std::string kPasswordPath{"/etc/passwd"};
 
 // System
+std::unordered_map<std::string, float> getMemKeys();
 float MemoryUtilization();
 long UpTime();
 std::vector<int> Pids();
@@ -26,6 +27,8 @@ int TotalProcesses();
 int RunningProcesses();
 std::string OperatingSystem();
 std::string Kernel();
+int ParseStat(std::string);
+
 
 // CPU
 enum CPUStates {
