@@ -5,3 +5,8 @@ System Monitor Project from Udacity. Starter code was provided as template. All 
 
 
 The project consists of simple ways to read and display information about a given Linux system. This information underlines the general CPU usage, uptime, and utilization of different processes. The software's theme closely resembles htop, providing a clean interface to show the highlighted parts of a computer. Importantly, this project was my first, so the code is not as robust or professional as a novice program would appear.
+
+The key concepts which I learned through this project were the following:
+Object-Oriented-Programming
+Interfacing with existing code
+The Linux system design (navigating filesystem to retrieve different stats)
